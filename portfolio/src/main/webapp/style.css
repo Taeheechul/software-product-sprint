@@ -8,7 +8,10 @@
   margin-top: 20px;
 }
 
-* Style the navigation bar */
+body{
+    background-color: #edffff;
+}
+/* Style the navigation bar */
 .navbar {
   width: 100%;
   background-color: #baddf9;
@@ -39,4 +42,8 @@
 img{
     height:500px;
     width:500px;
+}
+
+h1{
+    color:blueviolet;
 }
