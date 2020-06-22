@@ -74,4 +74,10 @@ h2{
  font-size: 10px;
  font-family: roboto-light;
 }
+/* map */
+#map {
+  border: thin solid black;
+  height: 500px;
+  width: 500px;
+}
 
