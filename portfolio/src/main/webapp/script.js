@@ -13,15 +13,24 @@
 // limitations under the License.
 
 // Carousel
-
 $('.carousel').carousel({
   interval: 2000
 });
-
 /* a map display */
 function createMap() {
   const map = new google.maps.Map(
       document.getElementById('map'),
-      {center: {lat: 37.422, lng: -122.084}, zoom: 25});
+      {center: {lat: 40.693320, lng:-73.988424}, 
+      zoom: 25, 
+      mapTypeId: "satellite"
+      });
 }
+/* location */
 
+var Roccos = {lat: 40.693320,lng:-73.988424};
+
+/* marker */
+var marker = new google.maps.Marker({
+  position: Roccos,
+  map: map
+});
