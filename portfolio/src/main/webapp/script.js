@@ -12,17 +12,25 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-/**
- * Adds a random greeting to the page.
- */
-function addRandomGreeting() {
-  const greetings =
-      ['Hello world!', '¡Hola Mundo!', '你好，世界！', 'Bonjour le monde!'];
-
-  // Pick a random greeting.
-  const greeting = greetings[Math.floor(Math.random() * greetings.length)];
-
-  // Add it to the page.
-  const greetingContainer = document.getElementById('greeting-container');
-  greetingContainer.innerText = greeting;
+// Carousel
+$('.carousel').carousel({
+  interval: 2000
+});
+/* a map display */
+function createMap() {
+  const map = new google.maps.Map(
+      document.getElementById('map'),
+      {center: {lat: 40.693320, lng:-73.988424}, 
+      zoom: 25, 
+      mapTypeId: "satellite"
+      });
 }
+/* location */
+
+var Roccos = {lat: 40.693320,lng:-73.988424};
+
+/* marker */
+var marker = new google.maps.Marker({
+  position: Roccos,
+  map: map
+});
